@@ -4,24 +4,6 @@
   <meta charset="UTF-8" />
   <title>Frango Assado – SIMPLeat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    /* simples, leve e pronto para rodar dentro do iframe "conteudo" */
-    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    body { display: flex; flex-direction: column; background: #fff; color: #111; }
-    header { background: #f2f2f2; border-bottom: 1px solid #d9dfea; padding: 10px; text-align: center; }
-    header h1 { margin: 0; font-size: 16px; }
-
-    /* conteúdo rolável */
-    main { flex: 1; min-height: 0; overflow: auto; padding: 12px; }
-
-    .linha { display: flex; align-items: center; gap: 8px; margin: 6px 0 10px; color:#374151; font-size: 14px; }
-    .foto { width: 100%; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; margin: 6px 0 14px; }
-    .foto img { width: 100%; height: 180px; object-fit: cover; display: block; }
-
-    h2 { font-size: 15px; margin: 12px 0 6px; padding-bottom: 6px; border-bottom: 1px solid #e5e7eb; }
-    ul, ol { margin: 0 0 14px 18px; }
-    li { margin: 6px 0; }
-  </style>
 </head>
 <body>
   <header>
@@ -29,11 +11,10 @@
   </header>
 
   <main>
-    <div class="linha">⏳ 30 minutos</div>
+    <p>⏳ 30 minutos</p>
 
-    <div class="foto">
-      <!-- use a imagem fornecida no repositório -->
-      <img src="../Imagens/frango.jpg" alt="Frango assado crocante" />
+    <div>
+      <img src="../Imagens/frango.jpg" alt="Frango assado crocante" width="100%" />
     </div>
 
     <h2>Ingredientes</h2>
@@ -59,8 +40,7 @@
       <li>Sirva quente.</li>
     </ol>
 
-    <!-- Texto extra só para garantir rolagem confortável em iframes menores -->
-    <p style="color:#6b7280;font-size:13px; margin-bottom:24px;">
+    <p>
       Dica: ajuste o tempo conforme o tamanho dos pedaços e o modelo da sua Air Fryer.
     </p>
   </main>
