@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="pg2.html">
-            <img src="https://dummyimage.com/1280x720/fff/aaa" alt="logo do instagram">
-            </a>
-            <ul>
-                <li>
-                    icone1
-                </li>
-
-                <li>
-                    icone2
-                </li>
-
-                <li>
-                    icone3
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-</body>
+    <title>SIMPLeat</title>
+    <style>
+      /* Simples, sem dependências: moldura de celular + header, main com iframe e nav */
+      html, body { height: 100%; margin: 0; font-family: sans-serif; }
+      body { display: flex; align-items: center; justify-content: center; background: #e5e5e5; }
+      .phone { width: 375px; height: 667px; background: #fff; border: 1px solid #ccc; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+      header { background: #f2f2f2; padding: 8px; text-align: center; }
+      header h1 { margin: 0; font-size: 18px; }
+      main { flex: 1; background: #fff; }
+      main iframe { width: 100%; height: 100%; border: none; }
+      nav { display: flex; justify-content: space-around; background: #f2f2f2; padding: 8px 0; }
+      nav a { text-decoration: none; font-size: 20px; color: #000; }
+    </style>
+  </head>
+  <body>
+    <div class="phone">
+      <header>
+        <h1>SIMPLeat</h1>
+      </header>
+      <main>
+        <!-- O iframe carrega o conteúdo central -->
+        <iframe src="Telas/Favoritos.html" name="conteudo"></iframe>
+      </main>
+      <nav>
+        <!-- Cada link abre dentro do iframe -->
+        <a href="Telas/Favoritos.html" target="conteudo">⭐</a>
+        <a href="Telas/Restrições.html" target="conteudo">🚫</a>
+        <a href="Telas/Tempo.html" target="conteudo">⏳</a>
+        <a href="Telas/Ingredientes.html" target="conteudo">🍲</a>
+      </nav>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favoritos – SIMPLeat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Página simples para rodar dentro do iframe "conteudo" */
+      html, body { height: 100%; margin: 0; font-family: sans-serif; }
+      body { display: flex; flex-direction: column; background: #fff; }
+      header { background: #f2f2f2; padding: 8px; text-align: center; }
+      header h1 { margin: 0; font-size: 16px; }
+      main { flex: 1; min-height: 0; overflow: auto; padding: 10px; }
+      ul { list-style: none; margin: 0; padding: 0; }
+
+      /* Cada receita é um hyperlink em formato de cartão */
+      a.card {
+        display: flex; justify-content: space-between; align-items: center;
+        border: 1px solid #ccc; border-radius: 8px;
+        padding: 10px; margin-bottom: 10px;
+        text-decoration: none; color: #000; background: #fff;
+      }
+      .titulo { font-weight: 700; }
+      .tempo { font-size: 12px; color: #555; }
+      .icone { font-size: 18px; margin-left: 8px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Receitas favoritas</h1>
+    </header>
+
+    <main>
+      <ul>
+        <li>
+          <a class="card" href="NotFound.html" target="conteudo">
+            <div>
+              <div class="titulo">Purê de mandioquinha</div>
+              <div class="tempo">⏳ 30 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="../Receitas/Frango.html" target="conteudo">
+            <div>
+              <div class="titulo">Frango crocante na Air Fryer</div>
+              <div class="tempo">⏳ 30 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="NotFound.html" target="conteudo">
+            <div>
+              <div class="titulo">Bolo de laranja</div>
+              <div class="tempo">⏳ 40 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="NotFound.html" target="conteudo">
+            <div>
+              <div class="titulo">Carne de panela</div>
+              <div class="tempo">⏳ 25 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="NotFound.html" target="conteudo">
+            <div>
+              <div class="titulo">Salada de frutas</div>
+              <div class="tempo">⏳ 10 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="ddddd" target="conteudo">
+            <div>
+              <div class="titulo">Mousse de maracujá</div>
+              <div class="tempo">⏳ 50 min</div>
+            </div>
+            <span class="icone">❤️</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

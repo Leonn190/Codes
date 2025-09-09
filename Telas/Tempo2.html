@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Receitas por tempo – SIMPLeat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Mesmo estilo simples das telas anteriores */
+      :root{
+        --b:#1f2937;       /* texto */
+        --bd:#d1d5db;      /* borda */
+        --muted:#6b7280;   /* secundário */
+        --card:#ffffff;    /* fundo do cartão */
+        --heart:#ef4444;   /* favorito */
+      }
+      html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      body { display: flex; flex-direction: column; background: #fff; color: var(--b); }
+      header { background: #f2f2f2; padding: 10px; text-align: center; border-bottom: 1px solid #e5e7eb; }
+      header h1 { margin: 0; font-size: 16px; letter-spacing: .2px; }
+
+      main { flex: 1; min-height: 0; overflow: auto; padding: 14px; }
+      ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+
+      /* Cartão clicável com título e linha de tempo, inspirado no sketch */
+      a.card{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        align-items: center;
+        text-decoration: none; color: inherit;
+        border: 1px solid var(--bd);
+        border-radius: 14px;
+        background: var(--card);
+        padding: 12px 14px;
+        transition: border-color .15s, transform .06s;
+      }
+      a.card:hover { border-color:#c7cad1; }
+      a.card:active { transform: translateY(1px); }
+
+      .titulo { font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+      .tempo  { font-size: 13px; color: var(--muted); }
+
+      .icone-like{
+        font-size: 18px; color: var(--muted);
+        transition: color .15s;
+      }
+      a.card:hover .icone-like{ color:#9ca3af; }
+      .fav{ color: var(--heart); }
+
+      footer{ height: 6px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Receitas por tempo</h1>
+    </header>
+
+    <main>
+      <ul>
+        <li>
+          <a class="card" href="Receita-MacAndCheese.html" target="conteudo" aria-label="Abrir Mac and Cheese">
+            <div>
+              <div class="titulo">Mac and Cheese</div>
+              <div class="tempo">tempo: 35 min</div>
+            </div>
+            <span class="icone-like" aria-hidden="true">♡</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="card" href="../Receitas/Frango.html" target="conteudo" aria-label="Abrir Frango crocante na Air Fryer">
+            <div>
+              <div class="titulo">Frango crocante na Air Fryer</div>
+              <div class="tempo">tempo: 30 min</div>
+            </div>
+            <span class="icone-like fav" aria-hidden="true">♥</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="card" href="Receita-PureDeBatata.html" target="conteudo" aria-label="Abrir Purê de batata">
+            <div>
+              <div class="titulo">Purê de batata</div>
+              <div class="tempo">tempo: 30 min</div>
+            </div>
+            <span class="icone-like" aria-hidden="true">♡</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="card" href="Receita-ArrozComBrocolis.html" target="conteudo" aria-label="Abrir Arroz com brócolis">
+            <div>
+              <div class="titulo">Arroz com brócolis</div>
+              <div class="tempo">tempo: 30 min</div>
+            </div>
+            <span class="icone-like" aria-hidden="true">♡</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Ajuste os href para os nomes reais das páginas no seu repositório. -->
+    <footer></footer>
+  </body>
+</html>
