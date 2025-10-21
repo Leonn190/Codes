@@ -4,42 +4,62 @@
   <meta charset="UTF-8">
   <title>Restrições – SIMPLeat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { margin:0; font-family:sans-serif; background:#fff; }
-    header { background:#f2f2f2; padding:10px; text-align:center; border-bottom:1px solid #e5e7eb; }
-    header h1 { margin:0; font-size:16px; }
-    main { padding:14px; }
-    ul { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
-    label { display:flex; align-items:center; gap:12px; border:1px solid #d1d5db; border-radius:10px; padding:12px; background:#fff; cursor:pointer; user-select:none; transition:0.15s; }
-    label:hover { border-color:#c7cad1; box-shadow:0 1px 0 rgba(0,0,0,.03); }
-    input[type=checkbox] { appearance:none; width:22px; height:22px; border:2px solid #d1d5db; border-radius:6px; display:grid; place-items:center; background:#fff; transition:0.15s; }
-    input[type=checkbox]:checked { border-color:#10b981; background:#10b981; }
-    input[type=checkbox]:checked::after { content:"✓"; color:#fff; font-weight:700; font-size:14px; line-height:1; }
-    span { font-size:16px; }
-    a.next { position:fixed; right:14px; bottom:14px; width:52px; height:52px; border-radius:50%; background:#1f2937; color:#fff; display:grid; place-items:center; text-decoration:none; font-size:22px; box-shadow:0 8px 20px rgba(0,0,0,.15); transition:0.12s; }
-    a.next:hover { background:#111827; transform:translateY(-1px); }
-    footer { height:6px; }
-  </style>
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header>
-    <h1>Selecione suas restrições</h1>
+<body class="app">
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Selecione suas restrições</h1>
   </header>
 
-  <main>
-    <ul>
-      <li><label><input type="checkbox" name="restricoes" value="gluten"><span>Glúten</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="lactose"><span>Lactose</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="castanhas"><span>Castanhas</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="frutos-do-mar"><span>Frutos do mar</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="derivados-animais"><span>Derivados de animais</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="peixe"><span>Peixe</span></label></li>
-      <li><label><input type="checkbox" name="restricoes" value="ovo"><span>Ovo</span></label></li>
+  <main class="site-main" role="main">
+    <ul class="card-list list-grid" role="list">
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="gluten" />
+          <span class="titulo">Glúten</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="lactose" />
+          <span class="titulo">Lactose</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="castanhas" />
+          <span class="titulo">Castanhas</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="frutos-do-mar" />
+          <span class="titulo">Frutos do mar</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="derivados-animais" />
+          <span class="titulo">Derivados de animais</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="peixe" />
+          <span class="titulo">Peixe</span>
+        </label>
+      </li>
+      <li>
+        <label class="card">
+          <input type="checkbox" name="restricoes" value="ovo" />
+          <span class="titulo">Ovo</span>
+        </label>
+      </li>
     </ul>
   </main>
 
-  <a class="next" href="Restrições2.html" target="conteudo" aria-label="Próximo">→</a>
-
-  <footer></footer>
+  <a class="pill fab" href="Restrições2.html" target="conteudo" aria-label="Próximo">→</a>
 </body>
 </html>

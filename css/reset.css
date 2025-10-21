@@ -1,0 +1,6 @@
+/* Reset/CSS base */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body, h1, h2, h3, p, ul, li, figure { margin: 0; }
+ul { list-style: none; padding: 0; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }

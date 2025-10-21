@@ -4,99 +4,65 @@
   <meta charset="UTF-8">
   <title>Receitas – SIMPLeat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #fff; }
-    header { background: #f2f2f2; padding: 10px; text-align: center; border-bottom: 1px solid #e5e7eb; }
-    header h1 { margin: 0; font-size: 16px; }
-
-    main { flex: 1; padding: 14px; }
-    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-
-    a.card {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 8px;
-      align-items: center;
-      text-decoration: none; color: #1f2937;
-      border: 1px solid #d1d5db;
-      border-radius: 14px;
-      background: #fff;
-      padding: 12px 14px;
-      box-shadow: 0 1px 0 rgba(0,0,0,.03);
-    }
-    a.card:hover { border-color:#c7cad1; }
-    a.card:active { transform: translateY(1px); }
-
-    strong { font-weight: 700; font-size: 16px; display: block; margin-bottom: 6px; }
-    span.chip { 
-      display: inline-block; 
-      padding: 4px 6px; 
-      margin-right: 4px; 
-      border-radius: 999px; 
-      background: #f3f4f6; 
-      font-size: 12px; 
-      border: 1px dashed #e5e7eb; 
-      color: #6b7280;
-    }
-    span.heart { font-size: 18px; color: #ef4444; }
-  </style>
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header>
-    <h1>Receitas</h1>
+<body class="app">
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Receitas</h1>
   </header>
 
-  <main>
-    <ul>
+  <main class="site-main" role="main">
+    <ul class="card-list list-grid" role="list">
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Omelete de Cogumelos</strong>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Omelete de Cogumelos">
+          <div class="card__text">
+            <span class="titulo">Omelete de Cogumelos</span>
             <span class="chip" title="Sem glúten">🥨 SG</span>
             <span class="chip" title="Sem lactose">🥛 SL</span>
             <span class="chip" title="Low carb">⚖️ LC</span>
           </div>
-          <span class="heart">♡</span>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
 
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Abobrinha Recheada</strong>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Abobrinha Recheada">
+          <div class="card__text">
+            <span class="titulo">Abobrinha Recheada</span>
             <span class="chip" title="Vegetariano">🥦 VG</span>
             <span class="chip" title="Sem glúten">🥨 SG</span>
             <span class="chip" title="Sem lactose">🥛 SL</span>
           </div>
-          <span class="heart">♡</span>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
 
       <li>
-        <a class="card" href="Frango.html" target="conteudo">
-          <div>
-            <strong>Frango Crocante</strong>
+        <a class="card" href="Frango.html" target="conteudo" aria-label="Frango Crocante">
+          <div class="card__text">
+            <span class="titulo">Frango Crocante</span>
             <span class="chip" title="Rico em proteína">🍗 PRO</span>
             <span class="chip" title="Air Fryer">🌀 AF</span>
             <span class="chip" title="Baixo sódio">🧂 BS</span>
           </div>
-          <span class="heart">♥</span>
+          <span class="icone" aria-hidden="true">♥</span>
         </a>
       </li>
 
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Banana Assada com Canela</strong>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Banana Assada com Canela">
+          <div class="card__text">
+            <span class="titulo">Banana Assada com Canela</span>
             <span class="chip" title="Sem glúten">🥨 SG</span>
             <span class="chip" title="Sem lactose">🥛 SL</span>
             <span class="chip" title="Sem ovos">🥚 SO</span>
           </div>
-          <span class="heart">♡</span>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
     </ul>
   </main>
 </body>
 </html>
-

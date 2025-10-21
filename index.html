@@ -3,39 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <title>SIMPLeat</title>
-    <style>
-      html, body { height: 100%; margin: 0; font-family: sans-serif; }
-      body { display: flex; align-items: center; justify-content: center; background: #e5e5e5; }
-      .phone { width: 375px; height: 667px; background: #fff; border: 1px solid #d0c5cd; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
-      header { background: #dcaad0; padding: 8px; text-align: center; }
-        header h1 {
-    margin: 0;
-    font-size: 28px;    
-    font-weight: 900;   
-    color: #fff;        
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
-    font-family: "Segoe UI", Roboto, sans-serif;
-  }
-      main { flex: 1; background: #fff; }
-      main iframe { width: 100%; height: 100%; border: none; }
-      nav { display: flex; justify-content: space-around; background: #dcaad0; padding: 8px 0; }
-      nav a { text-decoration: none; font-size: 20px; color: #000; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body class="app app--center">
     <div class="phone">
-      <header>
-        <h1>SIMPLeat</h1>
+      <header class="site-header site-header--brand" role="banner">
+        <h1 class="site-title site-title--brand">SIMPLeat</h1>
       </header>
-      <main>
-        <iframe src="Favoritos.html" name="conteudo"></iframe>
+
+      <main class="site-main" role="main">
+        <iframe class="frame" src="Favoritos.html" name="conteudo" title="Área de conteúdo"></iframe>
       </main>
-      <nav>
-        <a href="Favoritos.html" target="conteudo">⭐</a>
-        <a href="Restrições.html" target="conteudo">🚫</a>
-        <a href="Tempo.html" target="conteudo">⏳</a>
-        <a href="Ingredientes.html" target="conteudo">🍲</a>
+
+      <nav class="bottom-nav" aria-label="Navegação inferior">
+        <a href="Favoritos.html" target="conteudo" aria-label="Favoritos">⭐</a>
+        <a href="Restrições.html" target="conteudo" aria-label="Restrições">🚫</a>
+        <a href="Tempo.html" target="conteudo" aria-label="Tempo">⏳</a>
+        <a href="Ingredientes.html" target="conteudo" aria-label="Ingredientes">🍲</a>
       </nav>
     </div>
   </body>
 </html>
+

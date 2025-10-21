@@ -4,66 +4,54 @@
   <meta charset="UTF-8">
   <title>Receitas por tempo – SIMPLeat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #fff; }
-    header { background: #f2f2f2; padding: 8px; text-align: center; border-bottom: 1px solid #ccc; }
-    header h1 { margin: 0; font-size: 16px; }
-
-    main { padding: 10px; }
-    ul { list-style: none; margin: 0; padding: 0; }
-    li { margin-bottom: 10px; }
-
-    a.card {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 10px; border: 1px solid #ccc; border-radius: 8px;
-      text-decoration: none; color: #000; background: #fff;
-    }
-    a.card span { font-size: 12px; color: #555; }
-    a.card strong { font-weight: bold; color: #000; }
-    a.card .heart { font-size: 18px; color: red; }
-  </style>
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header>
-    <h1>Receitas por tempo</h1>
+<body class="app">
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Receitas por tempo</h1>
   </header>
 
-  <main>
-    <ul>
+  <main class="site-main" role="main">
+    <ul class="card-list list-grid" role="list">
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Mac and Cheese</strong><br>
-            <span>tempo: 35 min</span>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Mac and Cheese, 35 minutos">
+          <div class="card__text">
+            <span class="titulo">Mac and Cheese</span>
+            <time class="tempo" datetime="PT35M">⏳ 35 min</time>
           </div>
-          <div class="heart">♡</div>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
+
       <li>
-        <a class="card" href="Frango.html" target="conteudo">
-          <div>
-            <strong>Frango crocante na Air Fryer</strong><br>
-            <span>tempo: 30 min</span>
+        <a class="card" href="Frango.html" target="conteudo" aria-label="Frango crocante na Air Fryer, 30 minutos">
+          <div class="card__text">
+            <span class="titulo">Frango crocante na Air Fryer</span>
+            <time class="tempo" datetime="PT30M">⏳ 30 min</time>
           </div>
-          <div class="heart">♥</div>
+          <span class="icone" aria-hidden="true">♥</span>
         </a>
       </li>
+
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Purê de batata</strong><br>
-            <span>tempo: 30 min</span>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Purê de batata, 30 minutos">
+          <div class="card__text">
+            <span class="titulo">Purê de batata</span>
+            <time class="tempo" datetime="PT30M">⏳ 30 min</time>
           </div>
-          <div class="heart">♡</div>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
+
       <li>
-        <a class="card" href="NãoCriada.html" target="conteudo">
-          <div>
-            <strong>Arroz com brócolis</strong><br>
-            <span>tempo: 30 min</span>
+        <a class="card" href="NãoCriada.html" target="conteudo" aria-label="Arroz com brócolis, 30 minutos">
+          <div class="card__text">
+            <span class="titulo">Arroz com brócolis</span>
+            <time class="tempo" datetime="PT30M">⏳ 30 min</time>
           </div>
-          <div class="heart">♡</div>
+          <span class="icone" aria-hidden="true">♡</span>
         </a>
       </li>
     </ul>
