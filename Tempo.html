@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Tempo – SIMPLeat</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body class="app">
-    <header class="site-header" role="banner">
-      <h1 class="site-title">Selecione os períodos</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Tempo – SIMPLeat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app" data-pagina="tempo1">
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Selecione os períodos</h1>
+  </header>
 
-    <main class="site-main prose" role="main">
-      <form>
-        <h2>Períodos</h2>
-        <ul class="card-list list-grid" role="list">
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="15" />
-              <span class="titulo">15 minutos</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="30" />
-              <span class="titulo">30 minutos</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="45" />
-              <span class="titulo">45 minutos</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="60" />
-              <span class="titulo">1 hora</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="90" />
-              <span class="titulo">1:30 hora</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="120" />
-              <span class="titulo">2 horas</span>
-            </label>
-          </li>
-          <li>
-            <label class="card">
-              <input type="checkbox" name="tempo" value="+120" />
-              <span class="titulo">Mais de 2 horas</span>
-            </label>
-          </li>
-        </ul>
-      </form>
-    </main>
+  <main class="site-main prose" role="main">
+    <form>
+      <h2>Períodos</h2>
+      <ul class="card-list list-grid" role="list">
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="15" />
+            <span class="titulo">15 minutos</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="30" />
+            <span class="titulo">30 minutos</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="45" />
+            <span class="titulo">45 minutos</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="60" />
+            <span class="titulo">1 hora</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="90" />
+            <span class="titulo">1:30 hora</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="120" />
+            <span class="titulo">2 horas</span>
+          </label>
+        </li>
+        <li>
+          <label class="card">
+            <input type="checkbox" name="tempo" value="+120" />
+            <span class="titulo">Mais de 2 horas</span>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </main>
 
-    <a class="pill fab" href="Tempo2.html" target="conteudo" aria-label="Próximo">→</a>
-  </body>
+  <a class="pill fab" href="Tempo2.html" target="conteudo" aria-label="Próximo">→</a>
+
+  <script src="js/Global.js"></script>
+  <script src="js/Tempo.js"></script>
+</body>
 </html>
 
