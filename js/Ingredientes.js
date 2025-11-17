@@ -1,4 +1,4 @@
-// js/ingredientes.js
+// js/Ingredientes.js
 
 document.addEventListener("DOMContentLoaded", () => {
   const pagina = document.body.dataset.pagina;

@@ -1,4 +1,4 @@
-// js/receitas.js
+// js/Tempo.js
 
 document.addEventListener("DOMContentLoaded", () => {
   const pagina = document.body.dataset.pagina;
