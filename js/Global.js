@@ -1,5 +1,3 @@
-// js/Global.js
-
 const RECIPES = [
   {
     id: "frango-crocante",
@@ -7,11 +5,64 @@ const RECIPES = [
     tempoMin: 30,
     ingredientePrincipal: "Frango",
     url: "Receitas/Frango.html",
-    contemRestricoes: ["gluten", "ovo", "derivados-animais"], // o que NÃO pode
+    contemRestricoes: ["gluten", "ovo", "derivados-animais"], // contém ovo + farinha
     tags: ["🍗 PRO", "🌀 AF", "🧂 BS"]
   },
-]
-
+  {
+    id: "pure-mandioquinha",
+    nome: "Purê de mandioquinha cremoso",
+    tempoMin: 30,
+    ingredientePrincipal: "Mandioquinha",
+    url: "Receitas/PureMandioquinha.html",
+    contemRestricoes: ["lactose", "derivados-animais"], // leite + manteiga
+    tags: ["🥔", "👨‍🍳 Fácil"]
+  },
+  {
+    id: "bolo-laranja",
+    nome: "Bolo de laranja simples",
+    tempoMin: 45,
+    ingredientePrincipal: "Farinha de trigo",
+    url: "Receitas/BoloLaranja.html",
+    contemRestricoes: ["gluten", "lactose", "ovo", "derivados-animais"],
+    tags: ["🍰", "☕ Café da tarde"]
+  },
+  {
+    id: "carne-panela",
+    nome: "Carne de panela caseira",
+    tempoMin: 30,
+    ingredientePrincipal: "Carne bovina",
+    url: "Receitas/CarnePanela.html",
+    contemRestricoes: ["derivados-animais"], // carne
+    tags: ["🍖", "🍚 Almoço rápido"]
+  },
+  {
+    id: "salada-frutas",
+    nome: "Salada de frutas fresca",
+    tempoMin: 15,
+    ingredientePrincipal: "Frutas variadas",
+    url: "Receitas/SaladaFrutas.html",
+    contemRestricoes: [], // sem lactose, sem glúten etc. (básico)
+    tags: ["🍓", "🥗 Leve"]
+  },
+  {
+    id: "mousse-maracuja",
+    nome: "Mousse de maracujá",
+    tempoMin: 60,
+    ingredientePrincipal: "Maracujá",
+    url: "Receitas/MousseMaracuja.html",
+    contemRestricoes: ["lactose", "derivados-animais"], // creme de leite/leite condensado
+    tags: ["🍮", "🍽 Sobremesa"]
+  },
+  {
+    id: "arroz-brocolis",
+    nome: "Arroz com brócolis",
+    tempoMin: 30,
+    ingredientePrincipal: "Arroz",
+    url: "Receitas/ArrozBrocolis.html",
+    contemRestricoes: [], // versão vegana com óleo
+    tags: ["🥦 VG", "🍚 Acompanhamento"]
+  }
+];
 
 function obterIngredientesPrincipais() {
   const set = new Set(RECIPES.map(r => r.ingredientePrincipal));

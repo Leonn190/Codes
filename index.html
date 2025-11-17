@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <title>SIMPLeat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS global do app -->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
+
+  <!-- app--center = “modo telefone centralizado” -->
   <body class="app app--center">
     <div class="phone">
       <header class="site-header site-header--brand" role="banner">
         <h1 class="site-title site-title--brand">SIMPLeat</h1>
       </header>
 
+      <!-- IMPORTANTE: esse main NÃO deve rolar, quem rola é só o conteúdo do iframe -->
       <main class="site-main" role="main">
-        <iframe class="frame" src="Favoritos.html" name="conteudo" title="Área de conteúdo"></iframe>
+        <iframe
+          class="frame"
+          src="Favoritos.html"
+          name="conteudo"
+          title="Área de conteúdo">
+        </iframe>
       </main>
 
       <nav class="bottom-nav" aria-label="Navegação inferior">
-        <a href="Favoritos.html" target="conteudo" aria-label="Favoritos">⭐</a>
-        <a href="Restrições.html" target="conteudo" aria-label="Restrições">🚫</a>
-        <a href="Tempo.html" target="conteudo" aria-label="Tempo">⏳</a>
+        <a href="Favoritos.html"    target="conteudo" aria-label="Favoritos">⭐</a>
+        <a href="Restrições.html"   target="conteudo" aria-label="Restrições">🚫</a>
+        <a href="Tempo.html"        target="conteudo" aria-label="Tempo">⏳</a>
         <a href="Ingredientes.html" target="conteudo" aria-label="Ingredientes">🍲</a>
       </nav>
     </div>
